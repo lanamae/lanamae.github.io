@@ -1,0 +1,654 @@
+// variables
+$firstColor: #402418;
+$secondColor: #85573a;
+$thirdColor: #c5915b;
+$fourthColor: #d6b49e;
+$fifthColor: #ffffff;
+$sixthColor: #000000;
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dosis:wght@200&family=Playfair+Display&family=Vast+Shadow&display=swap');
+
+
+
+// testimonials animation 
+@keyframes testimonials {
+   0%{
+       background: url("/ASSETS/feedback-27.png");
+       background-position: center;
+       background-size: cover;
+       background-repeat: no-repeat;
+   }
+
+   50%{
+    background: url("/ASSETS/feedback-28.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+
+   100%{
+    background: url("/ASSETS/feedback-29.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+
+    .hero-page{
+        width: 100%;
+        height: 100vh;
+        background-image: url("/ASSETS/Xpreso-banner-1.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .navbar{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            width: 100%;
+            height: 50px;
+            background-color: $secondColor;
+            padding: 20px 100px;
+
+            .logo{
+                margin-right: auto;
+                width: 100px;
+                height: 100px;
+                margin-top: 70px;
+            }
+    
+            .navlinks li{
+                display: inline-block;
+                list-style: none;
+                padding: 10px;
+    
+                a{
+                    text-decoration: none;
+                    color: $fourthColor;
+                    font-size: 15px;
+                    font-weight: bold;
+                    
+                }
+                
+            
+            }
+    
+                .contact{
+                    width: 75px;
+                    height: 35px;
+                    border-style: none;
+                    border-radius: 15px;
+                    box-shadow: 3px 3px #00000056;
+                    margin: 0px 30px;
+        
+                    a{
+                        text-decoration: none;
+                        color: $secondColor;
+                        font-size: 12px;
+                        font-weight: bold;
+                    }
+            }
+
+        
+        }
+
+        .hero-hero-page{
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           text-align: center;
+           padding: 100px;
+           padding-top: 200px;
+
+            .tagline{
+                color: $firstColor;
+                font-weight: bold;
+                font-size: 35px;
+                margin-right: 50px;
+            }
+
+            .paragraph1{
+                color: $secondColor;
+                font-weight: light;
+                font-size: 20px;
+                margin-left: 100px;
+            }
+
+           
+
+        }
+    }
+
+
+    .background-img{
+        width: 100%;
+        height: 100vh;
+        background-image: url("/ASSETS/Xpreso-banner-6.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+    }
+
+
+    .about-page{
+        width: 100%;
+        height: 100vh;
+        background: url("/ASSETS/Xpreso-banner-2.png ");
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .about-title{
+            align-items:center;
+            font-size: 60px;
+            color: $fourthColor;
+            padding: 50px;
+            text-align: center;
+        }
+        .about-content{
+            display: flex;
+            justify-content: space-between;
+            
+            
+            
+            .about-img{
+                width: 570px;
+                height: 367px;
+                padding: 50px 100px;
+            }
+
+            .about-paragraph{
+                padding: 100px;
+                font-size: 20px;
+                color: $fifthColor;
+                padding: 50px 50px 50px 20px;
+                margin-right: 100px;
+            }
+
+
+        }
+        
+    }
+
+  
+
+    .products-page{
+        width: 100%;
+        height: 100vh;
+        background-color: $secondColor;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .products-title{
+            align-items:center;
+            font-size: 40px;
+            color: $fourthColor;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .products-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            
+
+            .hotcoffee{
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                margin-top: 50px;
+
+                p{
+                    color: $fourthColor;
+                    font-size: 25px;
+                }
+    
+                img{
+                    width: 350px;
+                    height: 350px;
+                    border:#d6b49e 2px solid;
+                    margin: 50px;
+                    margin-top: 5px;
+                    padding: 10px 30px 50px 30px;
+                
+                    
+                }
+
+                
+                
+    
+                button{
+                    align-items: center;
+                    margin-right: auto;
+                    background-color: #d6b49e;
+                    border-style: none;
+                    width: 150px;
+                    height: 50px;
+                    border-radius: 10px;
+
+                    a{
+                        text-decoration: none;
+                        color: $firstColor;
+                        font-size: 20px;
+                    }
+
+                }
+
+            }
+            
+            .pastries{
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                margin-top: 30px;
+                
+                p{
+                    color: $fourthColor;
+                    font-size: 25px;
+                }
+    
+                img{
+                    width: 350px;
+                    height: 350px;
+                    border:#d6b49e 2px solid;
+                    margin: 50px;
+                    margin-top: 5px;
+                    padding: 10px 30px 50px 30px;
+                }
+    
+                button{
+                      align-items: center;
+                    margin-right: auto;
+                    background-color: #d6b49e;
+                    border-style: none;
+                    width: 150px;
+                    height: 50px;
+                    border-radius: 10px;
+
+                    a{
+                        text-decoration: none;
+                        color: $firstColor;
+                        font-size: 20px;
+                        
+                    }margin-right: auto;
+
+                }
+            }
+
+
+            .icedcoffee{
+                justify-content: center;
+                align-content: center;
+                text-align: center;
+                margin-top: 30px;
+
+                p{
+                    color: $fourthColor;
+                    font-size: 25px;
+                }
+    
+                img{
+                    width: 350px;
+                    height: 350px;
+                    border:#d6b49e 2px solid;
+                    margin: 50px;
+                    margin-top: 5px;
+                    padding: 10px 30px 50px 30px;
+                }
+    
+                button{
+                    align-items: center;
+                    margin-right: auto;
+                    background-color: #d6b49e;
+                    border-style: none;
+                    width: 150px;
+                    height: 50px;
+                    border-radius: 10px;
+
+                    a{
+                        text-decoration: none;
+                        color: $firstColor;
+                        font-size: 20px;
+                        
+                    }
+                 }
+            }
+        }    
+
+    }
+
+    .service-page{
+        width: 100%;
+        height: 100vh;
+        background: url("/ASSETS/Xpreso-banner-4.png");
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        justify-content: space-between;
+        align-items: center;
+        padding: 250px 50px;
+
+        span{
+            content: " ";
+            display: block;
+            width: 1240px;
+            height: 20px;
+            background: $fourthColor;
+            
+        }
+        .service-content{
+            display: flex;
+            margin: 0px 180px 0px;
+            margin-top: -12%;
+            
+
+            img{
+                width: 300px;
+                height: 300px;
+                border: 5px solid $fourthColor;
+                border-radius: 100%;
+                margin: 10px;
+                margin-top: 0px;
+            }
+        }
+            
+    }
+
+
+    .testimonial-page{
+        width: 100%;
+        height: 100vh;
+
+        animation: testimonials 15s  ease-out infinite normal;
+        animation-delay: 2s;
+        background-position: center;
+        background-size: cover;
+
+    }
+
+
+    .extra-page{
+        display: flex;
+
+        width: 100%;
+        height: 100vh;
+        background: url("/ASSETS/Xpreso-banner-6.png");
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        
+        padding: 100px 70px 100px 600px;
+
+        
+        
+        .form-container{
+            background: none;
+            width: 650px;
+            height: 500px;
+            border: $fifthColor solid 5px;
+            
+            
+
+            .form-header{
+                background:none;
+                padding: 5px;
+                border-radius: 20px 20px 0px 0px;
+                height: 50px;
+                text-align: center;
+
+                h2{
+                    color: $fifthColor;
+                    padding: 5px;
+                    font-size: 40px;
+                    font-weight:500;
+                }
+            }
+
+            form{
+                padding: 5px;
+                display: block;
+
+                .form-control{
+                    padding: 10px;
+                    position: relative;
+
+                    label{
+                        display: block;
+                        padding: 5px;
+                        font-weight: 400;
+                        color: $fifthColor;
+                    }
+
+                    input{
+                        width: 100%;
+                        height: 30px;
+                        padding: 5px;
+                        display:block;
+                        border: $fifthColor solid;
+                        border-style: none;
+                        border-radius: 5px;
+                    }
+
+                    i{
+                        position: absolute;
+                        top: 45px;
+                        right: 15px;
+                        visibility: hidden;
+                        
+                    }
+
+                    small{
+                        color: $firstColor;
+                        font-size: 12px;
+                        padding-left: 10px;
+                        visibility: hidden;
+                    }
+                }
+
+                .form-control-success{
+                    padding: 10px;
+                    position: relative;
+
+                    label{
+                        display: block;
+                        padding: 5px;
+                        font-weight: 400;
+                        color: $fifthColor;
+                    }
+
+                    input{
+                        width: 100%;
+                        height: 30px;
+                        padding: 5px;
+                        display:block;
+                        border: $fifthColor solid;
+                        border: green 2px solid;
+                        border-radius: 5px;
+                    }
+
+                    i.fa-check-circle{
+                        position: absolute;
+                        top: 45px;
+                        right: 15px;
+                        visibility: visible;
+                        color: green;
+                    
+                    }
+
+                    i.fa-exclamation-circle{
+                        position: absolute;
+                        top: 45px;
+                        right: 15px;
+                        visibility: hidden;
+                        color: red;
+                    
+                    }
+                    
+
+                    small{
+                        color: green;
+                        font-size: 12px;
+                        padding-left: 10px;
+                        visibility: hidden;
+
+                    }
+                }
+
+                .form-control-error{
+                    padding: 10px;
+                    position: relative;
+
+                    label{
+                        display: block;
+                        padding: 5px;
+                        font-weight: 400;
+                        color: $fifthColor;
+                    }
+
+                    input{
+                        width: 100%;
+                        height: 30px;
+                        padding: 5px;
+                        display:block;
+                        border: $fifthColor solid;
+                        border: red 2px solid;
+                        border-radius: 5px;
+                    }
+
+                    i.fa-check-circle{
+                        position: absolute;
+                        top: 45px;
+                        right: 15px;
+                        visibility: hidden;
+                        color: green;
+                    
+                    }
+
+                    i.fa-exclamation-circle{
+                        position: absolute;
+                        top: 45px;
+                        right: 15px;
+                        visibility: visible;
+                        color: red;
+                    
+                    }
+                    
+
+                    small{
+                        color: red;
+                        font-size: 12px;
+                        padding-left: 10px;
+
+                    }
+                }
+
+                .submit-btn{
+                    width: 400px;
+                    height: 30px;
+                    margin: 0 100px 0 100px;
+                    align-self: center;
+                    background: $firstColor;
+                    border: $fifthColor solid 3px;
+                    color: $fourthColor;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+
+            
+        }
+       
+
+            
+        
+
+        
+        
+    }
+
+
+
+
+
+
+
+    .footer{
+
+        width: 100%;
+        height: 188px;
+        background-color: $secondColor;
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        text-align: center;
+        
+        
+
+        .footer-content{
+            display:flex;
+            padding: 0px 420px ;
+            padding-top: 15px;
+            text-align: center;
+            align-items: center;
+        }
+
+
+        .footer-logo{
+            width: 80px;
+            height: 80px;
+            margin-left: 200px;
+        }
+
+        .footer-title{
+            color:$firstColor;
+            padding-top: 30px;
+        }
+
+        ul{
+            margin-left: 150px;
+        }
+        ul li{
+            display: inline-block;
+            
+
+
+            img{
+                width: 30px;
+                height: 30px;
+                margin-left: 30px;
+                
+            }
+        }
+
+        .footer-text{
+            color: $fourthColor;
+            font-size: 12px;
+            margin-left: 120px;
+        }
+    }
+}
+
+// MOBILEE----------------------------
+@import "mobile-style";
+
+
+
