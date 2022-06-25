@@ -21,15 +21,23 @@ $sixthColor: #000000;
             background-size:cover;
             background-position: center;
             background-repeat: no-repeat;
+
+            display: grid;
+            grid-template-columns:  1fr;
+            grid-template-rows: 100px 1fr;
+
     
             .navbar{
+                grid-column: 1/2;
+                grid-row: 1/2;
+
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 width: 100%;
                 height: 40px;
                 background: none;
-                padding: 20px 10px;
+                padding: 20px 20px;
     
                 .logo{
                     width: 82px;
@@ -49,16 +57,17 @@ $sixthColor: #000000;
                     grid-gap: 10px;
                     width: 50px;
                     height: 38px;   
-                    margin: 20px 20px;
-                    padding: 100px;
+                    margin: 30px 20px;
+                    padding: 30px 20px;
+                    cursor: pointer;
 
                     span{
                         
-                        content: " ";
-                        width: 80px;
-                        height: 10px;
+                        content: "";
+                        width: 50px;
+                        height: 5px;
                         background: $firstColor;
-                        border-radius: 50px;
+                        border-radius: 30px;
                     }
                 }
     
@@ -66,6 +75,9 @@ $sixthColor: #000000;
             }
     
             .hero-hero-page{
+                grid-column: 1/2;
+                grid-row: 2/3;
+
                 display: grid;
                 grid-template-columns: 1fr ;
                 grid-template-rows: 1fr 1fr;
@@ -80,11 +92,13 @@ $sixthColor: #000000;
                     grid-row: 1/2;
                     color: $firstColor;
                     font-weight: bold;
-                    font-size: 20px;
-                    margin-top: 20px;
+                    font-size: 30px;
+                    margin-top: -250px;
                     margin-left: 20px;
-                    padding: 50px 30px;
+                    padding: -250px 30px;
                     text-align: center;
+                    background: $fourthColor;
+                    
                     
                 }
     
@@ -104,84 +118,85 @@ $sixthColor: #000000;
     
             }
         }
-    
-        .about-page{
-            width:100%;
-            height: 100vh;
-            background-image: url("./ASSETS/mobile-bg--31.png");
-            background-size:cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
-            .about-title{
-                align-items:center;
-                font-size: 40px;
-                color: $fourthColor;
-                padding: 20px;
-                text-align: center;
-            }
-
-            .about-content{
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr;
-                
-                
-                
-                .about-img{
-                    width: 100px;
-                    height: 100px;
-                    padding: 10px 50px;
-                }
-    
-                .about-paragraph{
-                    
-                    font-size: 12px;
-                    color: $fifthColor;
-                    // padding: 50px 50px 50px 20px;
-                    margin-right: 100px;
-                }
-    
-    
-            }
-        }
-    
-        .products-page{
-            width:100%;
-            height: 100vh;
-            background: $firstColor;
-            background-size:cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    
-        .service-page{
-            width:100%;
-            height: 100vh;
-            background: url("./ASSETS/mobile-bg--32.png");
-            background-size:cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    
-        .testimonial-page{
-            width:100%;
-            height: 100vh;
-            background: url("./ASSETS/mobile-bg--33.png");
-            background-size:cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    
-        .extra-page{
-            width:100%;
-            height: 100vh;
-            background: url("./ASSETS/mobile-bg--34.png");
-            background-size:cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-    }
-
-    
+    }    
 }
+//         .about-page{
+//             width:100%;
+//             height: 100vh;
+//             background-image: url("./ASSETS/mobile-bg--31.png");
+//             background-size:cover;
+//             background-position: center;
+//             background-repeat: no-repeat;
+
+//             .about-title{
+//                 align-items:center;
+//                 font-size: 40px;
+//                 color: $fourthColor;
+//                 padding: 20px;
+//                 text-align: center;
+//             }
+
+//             .about-content{
+//                 display: grid;
+//                 grid-template-columns: 1fr;
+//                 grid-template-rows: 1fr 1fr;
+                
+                
+                
+//                 .about-img{
+//                     width: 100px;
+//                     height: 100px;
+//                     padding: 10px 50px;
+//                 }
+    
+//                 .about-paragraph{
+                    
+//                     font-size: 12px;
+//                     color: $fifthColor;
+//                     // padding: 50px 50px 50px 20px;
+//                     margin-right: 100px;
+//                 }
+    
+    
+//             }
+//         }
+    
+//         .products-page{
+//             width:100%;
+//             height: 100vh;
+//             background: $firstColor;
+//             background-size:cover;
+//             background-position: center;
+//             background-repeat: no-repeat;
+//         }
+    
+//         .service-page{
+//             width:100%;
+//             height: 100vh;
+//             background: url("./ASSETS/mobile-bg--32.png");
+//             background-size:cover;
+//             background-position: center;
+//             background-repeat: no-repeat;
+//         }
+    
+//         .testimonial-page{
+//             width:100%;
+//             height: 100vh;
+//             background: url("./ASSETS/mobile-bg--33.png");
+//             background-size:cover;
+//             background-position: center;
+//             background-repeat: no-repeat;
+//         }
+    
+//         .extra-page{
+//             width:100%;
+//             height: 100vh;
+//             background: url("./ASSETS/mobile-bg--34.png");
+//             background-size:cover;
+//             background-position: center;
+//             background-repeat: no-repeat;
+//         }
+//     }
+
+    
+// }
