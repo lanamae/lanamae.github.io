@@ -63,12 +63,14 @@ $sixthColor: #000000;
             height: 50px;
             background-color: $secondColor;
             padding: 20px 100px;
+            box-shadow: #000000 4px 3px 6px;
 
             .logo{
                 margin-right: auto;
                 width: 100px;
                 height: 100px;
                 margin-top: 70px;
+                
             }
     
             .navlinks li{

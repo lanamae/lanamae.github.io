@@ -77,6 +77,8 @@
   height: 50px;
   background-color: #85573a;
   padding: 20px 100px;
+  -webkit-box-shadow: #000000 4px 3px 6px;
+          box-shadow: #000000 4px 3px 6px;
 }
 
 .main .hero-page .navbar .logo {
